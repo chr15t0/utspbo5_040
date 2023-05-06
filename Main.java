@@ -68,11 +68,7 @@ public class Main {
             for (i=0;i<accounts.size();i++){
                 //check uniqueness of account number 
                 if(accountnum==accounts.get(i).accountnum){
-                    return;
-                }
-                //generate new account number if similarity is found
-                else{
-                    accountnum=random.nextInt (999999);
+                    accountnum=random.nextInt (99999)+100000;
                 }
             }
             System.out.println("Your account number is : "+accountnum);
